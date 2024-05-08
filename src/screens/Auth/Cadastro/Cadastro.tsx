@@ -22,7 +22,7 @@ export const Cadastro = () => {
     const navigation = useNavigation();
 
     const handleLogin = () => {
-        navigation.navigate('Login')
+        navigation.navigate('Login');
     }
 
     return (
