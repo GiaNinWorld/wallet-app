@@ -2,13 +2,13 @@ import React from 'react';
 import { Text } from 'react-native';
 
 import {
-    Container,
+    Container
 } from './styles';
 
-export const Carteira = () => {
+export const Relatorio = () => {
     return (
         <Container>
-            <Text>Carteira</Text>
+            <Text>Relatorio</Text>
         </Container>
     )
 }
