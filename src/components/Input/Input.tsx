@@ -21,7 +21,7 @@ const Input: React.FC<InputProps & TextInputProps> = ({
     iconLeftName,
     iconSize = 25,
     iconColor,
-    secureTextEntry,
+    secureTextEntry = false,
     ...rest }) => {
     const { COLORS } = useTheme();
 

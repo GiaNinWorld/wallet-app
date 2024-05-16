@@ -8,12 +8,12 @@ import { Container, Title, Content } from './style';
 
 interface iButtonProps {
     title: string;
-    onPress: () => void;
-    iconName?: keyof typeof AntDesign.glyphMap;
-    isLoading?: boolean;
     disabled?: boolean;
-    variant?: 'primary' | 'outline' | 'black' | 'transparent';
+    isLoading?: boolean;
+    onPress: () => void;
     style?: PressableProps['style'];
+    iconName?: keyof typeof AntDesign.glyphMap;
+    variant?: 'primary' | 'outline' | 'black' | 'transparent';
 }
 
 const Button: React.FC<iButtonProps> = ({
@@ -33,10 +33,10 @@ const Button: React.FC<iButtonProps> = ({
 
     return (
         <Container
-            {...rest}
             onPress={onPress}
             disabled={isLoading || disabled}
             style={[buttonStyle.button, style]}
+            {...rest}
         >
             {isLoading ? (
                 <ActivityIndicator
