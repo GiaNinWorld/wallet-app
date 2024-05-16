@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text } from 'react-native';
+
+import { Header } from '../../../components/Header/Header'
 
 import {
     Container,
@@ -8,7 +9,7 @@ import {
 export const Carteira = () => {
     return (
         <Container>
-            <Text>Carteira</Text>
+            <Header />
         </Container>
     )
 }
